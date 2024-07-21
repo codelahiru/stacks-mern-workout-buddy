@@ -27,3 +27,5 @@ dist-ssr
 # ^ temporary
 .env
 .txt
+
+./package-lock.json
