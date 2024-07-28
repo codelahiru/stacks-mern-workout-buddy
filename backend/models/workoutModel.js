@@ -1,4 +1,5 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose');   // we need mongoose since it allows to create models and schemas. 
+                                        // mongoDB alone, is schemaless
 
 const Schema = mongoose.Schema
 

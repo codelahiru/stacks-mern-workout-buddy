@@ -1,2 +1,1 @@
-# stacks-mern-workout-buddy
-# pw: test123456
+## stacks-mern-workout-buddy
