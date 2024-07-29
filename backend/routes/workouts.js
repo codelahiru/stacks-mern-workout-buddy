@@ -1,17 +1,15 @@
 const express = require('express')
 const Workout = require('../models/workoutModel')
 const {createWorkout} = require('../controllers/workoutController')
+const {getWorkouts} = require('../controllers/workoutController')
+const {getWorkout} = require('../controllers/workoutController')
 const router = express.Router()
 
 // GET all workouts
-router.get('/', (req, res) => {
-    res.json({msg: 'GET all workouts'})
-})
+router.get('/', getWorkouts)
 
 // GET a single workout
-router.get('/:id', (req, res) => {
-    res.json({msg: 'GET a single workout'})
-})
+router.get('/:id', getWorkout)
 
 // POST a new workout
 router.post('/', createWorkout)
